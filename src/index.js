@@ -109,7 +109,7 @@ module.exports = function toReadable (number) {
   } else if (number < 100){
     return modulo_ten(number) + one_to_nine(number % 10)
   } else {
-    return modulo_hundred(number) + test(number)
+    return modulo_hundred(number) + second_part_of_hundred(number)
   }
 }
   
